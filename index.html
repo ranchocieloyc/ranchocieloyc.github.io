@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    
+	<title>Rancho Cielo Youth Campus</title>	
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		
+			//Blur Links (Prevents Outline)
+			$('a').click(function() {
+        		this.blur();
+        	});
+		
+			//Hide all item descriptions in the info box
+			$("#infobox > div").css("display", "none");
+		
+			//Call in the info box
+			$(".more a").click(function(){
+				$("#infobox").animate({bottom: '233px' }, 300);
+				$("#fade_bg").fadeIn();
+				return false;
+			});
+			
+			//Expand more info button on hover
+			$(".more").hover(function(){
+				$(this).stop().animate({width: '225px' }, 200).css({'z-index' : '10'}); //Change the width increase caption size
+			}, function () {
+				$(this).stop().animate({width: '50px' }, 200).css({'z-index' : '1'});
+      		});
+      		
+      		//Show description for selected item
+      		$("#pond a").click(function(){
+				$("#pond_info").show();
+			});
+			
+			$("#amphitheatre a").click(function(){
+				$("#amphitheatre_info").show();
+			});
+
+      		$("#garden a").click(function(){
+				$("#garden_info").show();
+			});
+			
+      		$("#dining a").click(function(){
+				$("#dining_info").show();
+			});
+			
+			$("#caretakers a").click(function(){
+				$("#caretakers_info").show();
+			});
+			
+			$("#studenthousing a").click(function(){
+				$("#studenthousing_info").show();
+			});
+			
+			$("#adminbuilding a").click(function(){
+				$("#adminbuilding_info").show();
+			});
+			
+			$("#silverstar a").click(function(){
+				$("#silverstar_info").show();
+			});
+			
+			$("#gym a").click(function(){
+				$("#gym_info").show();
+			});
+			
+			$("#constructionclass a").click(function(){
+				$("#constructionclass_info").show();
+			});
+			
+			$("#constructionwork a").click(function(){
+				$("#constructionwork_info").show();
+			});
+			
+			$("#rockwall a").click(function(){
+				$("#rockwall_info").show();
+			});
+			
+			$("#trails a").click(function(){
+				$("#trails_info").show();
+			});
+			
+			$("#entrance a").click(function(){
+				$("#entrance_info").show();
+			});
+			
+			$("#horseshoe a").click(function(){
+				$("#horseshoe_info").show();
+			});
+
+						
+			//Remove background, info box and hide all descriptions
+			$("#fade_bg, .close").click(function(){
+				$("#fade_bg").fadeOut();
+				$("#infobox").animate({bottom: '-1900px' }, 300, function() {
+					$("#infobox > div").css("display", "none");
+				});
+				return false;
+			});
+		
+		}); 
+		
+	</script>
+	
+	
+</head>
+
+<body>
+	<h1><a href="http://ranchocieloyc.org/">Rancho  Cielo  Youth  Campus</a></h1>
+	<div id="picture">
+		
+		<!-- More Info Buttons -->
+		
+		
+		<div class="more" id="amphitheatre">
+			<a href="#"><img src="img/more.png"/></a>
+			<span id="textColor">Amphitheatre</span>
+		</div>
+        
+        <div class="more" id="caretakers">
+			<a href="#"><img src="img/more.png"/></a>
+			<span id="textColor">Care Takers Home</span>
+		</div>
+        
+        <div class="more" id="dining">
+			<a href="#"><img src="img/more.png"/></a>
+			<span id="textColor">Drummond Culinary Academy</span>
+		</div>
+		
+		<div class="more" id="garden">
+			<a href="#"><img src="img/more.png"/></a>
+			<span id="textColor">Leadership Garden</span>
+		</div>
+        
+        <div class="more" id="pond">
+			<a href="#"><img src="img/more.png"/></a>
+			<span id="textColor">Pond</span>
+		</div>
+        
+        <div class="more" id="studenthousing">
+			<a href="#"><img src="img/more.png"/></a>
+			<span id="textColor">Student Housing</span>
+		</div>
+        
+        <div class="more" id="adminbuilding">
+			<a href="#"><img src="img/more.png"/></a>
+			<span id="textColor">Main Office</span>
+		</div>
+        
+        <div class="more" id="silverstar">
+			<a href="#"><img src="img/more.png"/></a>
+			<span id="textColor">Silver Star Administration Building & Classrooms</span>
+		</div>
+        
+         <div class="more" id="gym">
+			<a href="#"><img src="img/more.png"/></a>
+			<span id="textColor">Gym</span>
+		</div>
+        
+        <div class="more" id="constructionclass">
+			<a href="#"><img src="img/more.png"/></a>
+			<span id="textColor">Construction Classrooms</span>
+		</div>
+        
+        <div class="more" id="constructionwork">
+			<a href="#"><img src="img/more.png"/></a>
+			<span id="textColor">Construction Workshop</span>
+		</div>
+        
+        <div class="more" id="rockwall">
+			<a href="#"><img src="img/more.png"/></a>
+			<span id="textColor">Rock Wall</span>
+		</div>
+        
+        <div class="more" id="trails">
+			<a href="#"><img src="img/more.png"/></a>
+			<span id="textColor">Student Hiking & Biking Trails</span>
+		</div>
+        
+        <div class="more" id="entrance">
+			<a href="#"><img src="img/more.png"/></a>
+			<span id="textColor">Rancho Cielo Youth Campus</span>
+		</div>
+        
+        <div class="more" id="horseshoe">
+			<a href="#"><img src="img/more.png"/></a>
+			<span id="textColor">Horse Shoe Pits</span>
+		</div>
+		
+		<!-- Info Boxes -->
+		<div id="infobox">
+			<span class="close"><a href="#"><img src="img/close.png"/></a></span>
+			<br/>
+			
+			<div id="pond_info">
+            <h4>Pond</h4>
+				<iframe src="locations/pond.html" height="500" width="900"></iframe><br/>
+			</div>
+			
+			<div id="amphitheatre_info">
+            <h4>Amphitheatre</h4>
+				<iframe src="locations/amphitheatre.html" height="500" width="900"></iframe><br/>
+			</div>
+			
+			<div id="garden_info">
+            <h4>Leadership Garden</h4>
+				<iframe src="locations/garden.html" height="500" width="900"></iframe><br/> 
+			</div>
+			
+			<div id="dining_info">
+            <h4>Drummond Culinary Academy (Kitchen & Dining Room)</h4>
+				<iframe src="locations/dinning.html" height="500" width="900"></iframe><br/> 
+			</div>	
+            
+            <div id="caretakers_info">
+            <h4>Care Taker home</h4>
+				<iframe src="locations/caretakers.html" height="500" width="900"></iframe><br/>
+			</div>
+            
+            <div id="studenthousing_info">
+            <h4>Student Housing</h4>
+				<iframe src="locations/studentHousing.html" height="500" width="900"></iframe><br/>
+			</div>
+            
+            <div id="adminbuilding_info">
+            <h4>Main Office</h4>
+				<iframe src="locations/mainOffice.html" height="500" width="900"></iframe><br/> 
+			</div>
+            
+            <div id="silverstar_info">
+            <h4>Silver Star Administration Building & Classrooms</h4>
+				<iframe src="locations/silverstar.html" height="500" width="900"></iframe><br/>
+			</div>
+            
+            <div id="gym_info">
+            <h4>Gym</h4>
+				<iframe src="locations/gym.html" height="500" width="900"></iframe><br/>
+			</div>
+            
+            <div id="constructionclass_info">
+            <h4>Construction Classrooms</h4>
+				<iframe src="locations/constructionclass.html" height="500" width="900"></iframe><br/>
+			</div>
+            
+            <div id="constructionwork_info">
+            <h4>Construction Workshop<h4>
+				<iframe src="locations/constructionworkshop.html" height="500" width="900"></iframe><br/>
+			</div>
+            
+            <div id="rockwall_info">
+            <h4>Rock Wall</h4>
+				<iframe src="locations/rockwall.html" height="500" width="900"></iframe><br/> 
+			</div>
+            
+            <div id="trails_info">
+            <h4>Student Hiking & Biking Trails</h4>
+				<iframe src="locations/hiking.html" height="500" width="900"></iframe><br/> 
+			</div>
+            
+             <div id="entrance_info">
+            <h4>Rancho Cielo Youth Campus</h4><br/>
+            <iframe src="locations/entrance.html" height="500" width="900"></iframe><br/> 
+			</div>
+            
+            <div id="horseshoe_info">
+            <h4>Horse Shoe Pits</h4><br/>
+            <iframe src="locations/horseshoe.html" height="500" width="900"></iframe><br/> 
+			</div>
+
+            	
+		</div>
+		
+		<!-- Dimmed Background -->
+		<div id="fade_bg">&nbsp;</div>
+		
+	</div>
+</body>
+</html>

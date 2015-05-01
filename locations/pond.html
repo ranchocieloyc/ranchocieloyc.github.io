@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- Find similar font from Google Fonts -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="../js/jquery.onepage-scroll.js"></script>
+  <link href='../css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <link href="../css/style.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+
+	</script>
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
+
+	    <section class="page1" style="background:url(../img/pond.jpg);">
+		   <div class="info-right" style="font-size: 200%;">
+	Students and staff are encouraged to venture out to one of two beautiful 
+	campus ponds, where blue-gill, sunfish and bass are plentiful!  Inside our 
+	Boathouse you will find a number of fishing poles, and a handful of kayaks 
+	and canoes.  This is a popular spot to relax and enjoy the Salinas Valley sunshine.			
+			</div>
+            </section>
+            
+             <section class="page2" style="background:url(../img/pond2.jpg);">
+		   <div class="info-right">
+				
+			</div>
+            </section>
+            <section class="page3" style="background:url(../img/pond3.jpg);">
+		   <div class="info-right">				
+			</div>
+            </section>
+      
+    </div>
+
+  </div>
+</body>
+</html>
