@@ -138,7 +138,6 @@
    		width: 30%;
    		float:right;
     	height:100vh;
-    	
     	padding: 100px 20px 0px 20px;
     	background: rgba(255,255,255, 0.85);
 
@@ -578,6 +577,9 @@
 			#trails{ top: 770px; left: 190px;}
 			#entrance{ top: 930px; left: 1000px;}
 			#horseshoe{ top: 450px; left: 720px;}
+			#bus{top:700px; left:750px;}
+			#health{top:500px; left:1090px;}
+			#vocational{top:780px;left:750px;}
 			
 			/* General Info Box */
 			#infobox{ position:absolute; bottom:-1900px; left: 350px; height:51%; width:70%; z-index:20; margin:0 0 -100px -150px; background:#000; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; text-shadow:2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black; }
