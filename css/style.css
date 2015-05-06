@@ -554,7 +554,7 @@
 		h4{ font:bold 16px Helvetica, Arial, sans-sarif; color:#FFF; text-shadow:2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black; }
 		
 		/* Picture Styles */
-		#picture{ position:relative; top:20px; width:1338px; height:1120px; margin:0px auto; background:#FFF url('../img/map.jpg'); overflow:hidden; -moz-overflow: hidden; }
+		#picture{ position:relative; top:20px; width:1338px; height:1120px; margin:0px auto; background:#FFF url('../img/map.jpg'); overflow:hidden;}
 			
 			/* General More Button */		
 			.more{ position:absolute; width:31px; height:32px; background:url('dim.png'); padding:1px; text-align:left; overflow:hidden; }
